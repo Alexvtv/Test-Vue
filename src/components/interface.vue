@@ -24,7 +24,7 @@
 				this.additionalArea = !this.additionalArea
 			},
 			addTask() {
-				if(this.newTaskText !== "") {
+				if(/\S/.test(this.newTaskText)) {
 					this.$emit('addNewTask', {
     			  text: this.newTaskText
     			});
