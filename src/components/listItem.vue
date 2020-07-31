@@ -27,8 +27,8 @@ export default {
 	.item {
 		position: relative;
 		padding: 9px 40px 6px 5px;
-		width: 550px;
-		margin: 0 auto;
+		width: 450px;
+		margin: 0 30px;
 		border-bottom: 1px solid #77ebdd;
 		p {
 			color: #cacacc;
@@ -44,9 +44,15 @@ export default {
 		}
 	}
 
+  @media (max-width: 784px) {
+    .item {
+      width: 350px;
+    }
+  }
+
 	@media (max-width: 634px) {
     .item {
-    	width: 400px;
+      margin: 0 auto;
     }
   }
 

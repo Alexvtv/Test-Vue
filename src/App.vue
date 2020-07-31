@@ -58,7 +58,8 @@
   @import "~bootstrap/scss/bootstrap";
 
   .app {
-    overrflow-y: hidden;
+    height: 100vh;
+    overflow-y: hidden;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

@@ -117,10 +117,10 @@
 
   @media (max-width: 634px) {
   	.interface {
-  		padding: 40px 40px 0 40px;
+  		padding: 40px 30px 0 90px;
   		.area {
   			input {
-  				width: 250px;
+  				width: 224px;
   			}
   		}
   	}
@@ -128,6 +128,11 @@
 
   @media (max-width: 464px) {
   	.interface {
+      padding: 40px 30px 0 80px;
+      &>img {
+        top: 33px;
+        height: 50px
+      }
 			button {
 				width: 90px;
 				font-size: 15px;
@@ -138,6 +143,9 @@
       		width: 40px;
       		font-size: 16px;
       	}
+        input {
+          width: 130px;
+        }
       }
   		.area {
   			input {
