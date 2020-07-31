@@ -29,13 +29,13 @@ export default {
 		padding: 9px 40px 6px 5px;
 		width: 550px;
 		margin: 0 auto;
-		border-bottom: 1px solid #cacacc;
+		border-bottom: 1px solid #77ebdd;
 		p {
 			color: #cacacc;
 			margin-bottom: 0;
 		}
 		button {
-			color: #cacacc;
+			color: #77ebdd;
 			border: 0;
 			background: inherit;
 			position: absolute;

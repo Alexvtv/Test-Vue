@@ -1,5 +1,6 @@
 <template>
   <div class="interface" :style="{ animation: this.additionalArea ? '0.6s show-area forwards' : '0.6s hide-area forwards'}">
+    <img src="./../assets/logo.png" />
     <div class="search-menu">
       <input v-model.lazy="searchValue" v-on:change="changeSearchValue" type="text" class="form-control"> <p>Поиск</p>
     </div>
@@ -17,7 +18,8 @@
 			return {
 				searchValue: "",
 				newTaskText: "",
-				additionalArea: false
+				additionalArea: false,
+        src: './assets/logo.png'
 			}
 		}, methods: {
 			changeAdditionalArea() {
@@ -46,21 +48,31 @@
     padding: 40px 100px 0 100px;
     height: 100px;
     border-bottom: 2px solid #cacacc;
+    &>img {
+      position: absolute;
+      left: 20px;
+      top: 28px;
+      height: 60px
+    }
     input {
-    	border: 2px solid #1e204a;
+    	border: 2px solid #212121;
     }
     button {
-    	background-color: #1e204a;
+    	background-color: #50a197;
     	border: 2px solid #cacacc;
     	width: 150px;
       display: inline-block;
       float: right;
       transition: none;
     }
-    button:hover, button:active, button:focus {
-    	background-color: #32355c;
+    button:active, button:focus {
+    	background-color: #50a197;
     	border: 2px solid #858585;
     	box-shadow: none;
+    }
+    button:hover {
+      background-color: #77ebdd;
+      border: 2px solid #858585;
     }
     .search-menu {
       display: inline-block;
